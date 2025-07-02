@@ -10,7 +10,7 @@ import ProjectLink from '../ProjectLink';
 
 export default function Card() {
   return (
-    <div className="w-full max-w-[900px]  mx-auto overflow-hidden rounded-[8px] relative z-10 bg-white/10 backdrop-blur-md p-1 sm:p-6 relative shadow-2xl">
+    <div className="w-full max-w-[900px] h-screen max-sm:overflow-y-auto  sm:h-auto mx-auto overflow-hidden rounded-[8px] relative z-10 bg-white/10 backdrop-blur-md p-1 sm:p-6 relative shadow-2xl">
       <div className="w-full h-12 bg-[#2D2D2D] absolute top-0 left-0 flex items-center px-4">
         <div className="flex gap-2">
           <div className="w-3 h-3 rounded-full bg-[#FF5F56]"></div>
