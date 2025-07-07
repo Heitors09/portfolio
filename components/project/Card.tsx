@@ -158,7 +158,7 @@ export default function Card() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 px-3 sm:px-6 py-4">
         <ProjectLink
-          url="https://anime-database-six.vercel.app"
+          url="https://anime-hub-fawn.vercel.app/"
           image="/AnimeHub-homepage-1.png"
           title="AnimeHub"
           description="Plataforma onde você pode conhecer um novo anime e receber indicações de uma IA assistente"
