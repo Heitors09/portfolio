@@ -28,8 +28,9 @@ export default function Card() {
           </h3>
           <p className="text-white/90 text-xs sm:text-sm max-w-[600px] leading-relaxed font-orbitron">
             fala galera! sou dev front-end e minha paixão é codar interfaces
-            bonitas que funcionam em qualquer tela. Aplicando meu esforço em
-            criar experiências incríveis pros usuários
+            bonitas que funcionam em qualquer tela. Tenho experiencia prática de
+            1 ano e meio em desenvolvimento web onde já trabalhei em trabalho
+            freelance e em uma empresa de tecnologia.
           </p>
           <div className="flex justify-center sm:justify-start gap-4 mt-2">
             <a
@@ -158,10 +159,16 @@ export default function Card() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 px-3 sm:px-6 py-4">
         <ProjectLink
-          url="https://anime-hub-fawn.vercel.app/"
+          url="https://github.com/Heitors09/anime-hub"
           image="/AnimeHub-homepage-1.png"
           title="AnimeHub"
           description="Plataforma onde você pode conhecer um novo anime e receber indicações de uma IA assistente"
+        />
+        <ProjectLink
+          url="https://csv-to-json-seven.vercel.app/"
+          image="/csv-to-json.png"
+          title="CSV to JSON"
+          description="Plataforma onde você pode converter arquivos CSV para JSON e baixar de forma gratuita"
         />
       </div>
     </div>
