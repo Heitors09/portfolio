@@ -29,8 +29,8 @@ export default function Card() {
           <p className="text-white/90 text-xs sm:text-sm max-w-[600px] leading-relaxed font-orbitron">
             fala galera! sou dev front-end e minha paixão é codar interfaces
             bonitas que funcionam em qualquer tela. Tenho experiencia prática de
-            1 ano e meio em desenvolvimento web onde já trabalhei em trabalho
-            freelance e em uma empresa de tecnologia.
+            mais de um ano em desenvolvimento web onde já trabalhei como
+            freelancer e em uma empresa de tecnologia.
           </p>
           <div className="flex justify-center sm:justify-start gap-4 mt-2">
             <a
@@ -159,10 +159,10 @@ export default function Card() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 px-3 sm:px-6 py-4">
         <ProjectLink
-          url="https://github.com/Heitors09/anime-hub"
-          image="/AnimeHub-homepage-1.png"
-          title="AnimeHub"
-          description="Plataforma onde você pode conhecer um novo anime e receber indicações de uma IA assistente"
+          url="https://air-notes-six.vercel.app/"
+          image="/airnote.png"
+          title="AirNote"
+          description="Air Note é uma aplicação web prática que permite criar, organizar suas notas, ajudando você a lembrar de tarefas"
         />
         <ProjectLink
           url="https://csv-to-json-seven.vercel.app/"
