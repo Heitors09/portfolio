@@ -120,39 +120,39 @@ export default function Card() {
           </div>
         </div>
       </div>
-      <div className="mx-6 flex flex-col gap-2 mb-4">
-        <div className="flex text-[#756E78] flex-wrap justify-center sm:justify-start gap-2">
-          <span className="text-xs sm:text-sm font-orbitron px-2 sm:px-3 flex items-center gap-2 transition-colors">
-            <div className="size-2 rounded-full bg-[#6D94F3]"></div>
-            <p>Javascript</p>
-          </span>
-          <span className="text-xs sm:text-sm font-orbitron px-2 sm:px-3 flex items-center gap-2 transition-colors">
-            <div className="size-2 rounded-full bg-[#6D94F3]"></div>
-            <p>React</p>
-          </span>
-          <span className="text-xs sm:text-sm font-orbitron px-2 sm:px-3 flex items-center gap-2 transition-colors">
-            <div className="size-2 rounded-full bg-[#6D94F3]"></div>
-            <p>Next.js</p>
-          </span>
-          <span className="text-xs sm:text-sm font-orbitron px-2 sm:px-3 flex items-center gap-2 transition-colors">
-            <div className="size-2 rounded-full bg-[#6D94F3]"></div>
-            <p>Typescript</p>
-          </span>
-          <span className="text-xs sm:text-sm font-orbitron px-2 sm:px-3 flex items-center gap-2 transition-colors">
-            <div className="size-2 rounded-full bg-[#6D94F3]"></div>
-            <p>Figma</p>
-          </span>
-          <span className="text-xs sm:text-sm font-orbitron px-2 sm:px-3 flex items-center gap-2 transition-colors">
-            <div className="size-2 rounded-full bg-[#6D94F3]"></div>
-            <p>UI/UX</p>
-          </span>
-        </div>
-      </div>
       <div>
         <div>
           <h2 className="font-orbitron mx-6  text-[#252226] text-sm sm:text-base font-semibold">
             Desenvolvimento web:
           </h2>
+          <div className="mx-6 flex flex-col gap-2 my-4">
+            <div className="flex text-[#756E78] flex-wrap justify-center sm:justify-start gap-2">
+              <span className="text-xs sm:text-sm font-orbitron px-2 sm:px-3 flex items-center gap-2 transition-colors">
+                <div className="size-2 rounded-full bg-[#6D94F3]"></div>
+                <p>Javascript</p>
+              </span>
+              <span className="text-xs sm:text-sm font-orbitron px-2 sm:px-3 flex items-center gap-2 transition-colors">
+                <div className="size-2 rounded-full bg-[#6D94F3]"></div>
+                <p>React</p>
+              </span>
+              <span className="text-xs sm:text-sm font-orbitron px-2 sm:px-3 flex items-center gap-2 transition-colors">
+                <div className="size-2 rounded-full bg-[#6D94F3]"></div>
+                <p>Next.js</p>
+              </span>
+              <span className="text-xs sm:text-sm font-orbitron px-2 sm:px-3 flex items-center gap-2 transition-colors">
+                <div className="size-2 rounded-full bg-[#6D94F3]"></div>
+                <p>Typescript</p>
+              </span>
+              <span className="text-xs sm:text-sm font-orbitron px-2 sm:px-3 flex items-center gap-2 transition-colors">
+                <div className="size-2 rounded-full bg-[#6D94F3]"></div>
+                <p>Figma</p>
+              </span>
+              <span className="text-xs sm:text-sm font-orbitron px-2 sm:px-3 flex items-center gap-2 transition-colors">
+                <div className="size-2 rounded-full bg-[#6D94F3]"></div>
+                <p>UI/UX</p>
+              </span>
+            </div>
+          </div>
         </div>
       </div>
 
