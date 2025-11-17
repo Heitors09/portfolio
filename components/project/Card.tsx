@@ -7,6 +7,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
+import { Star } from 'lucide-react';
 import Image from 'next/image';
 import ProjectLink from '../ProjectLink';
 
@@ -22,8 +23,8 @@ export default function Card() {
       </div>
 
       <div className="flex flex-col sm:flex-row w-full mt-4 p-3 sm:p-6 items-start gap-4">
-        <div className="ring-2 mt-7 sm:mt-0 ring-[#6D94F3] w-[80px] h-[80px] sm:size-[99px] rounded-full overflow-hidden flex-shrink-0">
-          <Image src="/bambietta.jpeg" alt="eu" width={100} height={100} />
+        <div className="ring-2 mt-7 relative sm:mt-0 ring-[#6D94F3] w-[80px] h-[80px] sm:size-[120px] rounded-full overflow-hidden flex-shrink-0">
+          <Image src="/bambietta.jpeg" alt="eu" fill />
         </div>
 
         <div className="flex flex-col gap-1 text-center sm:text-left">
@@ -120,48 +121,24 @@ export default function Card() {
           </div>
         </div>
       </div>
-      <div>
-        <div>
-          <h2 className="font-orbitron mx-6  text-[#252226] text-sm sm:text-base font-semibold">
-            Desenvolvimento web:
-          </h2>
-          <div className="mx-6 flex flex-col gap-2 my-4">
-            <div className="flex text-[#756E78] flex-wrap justify-center sm:justify-start gap-2">
-              <span className="text-xs sm:text-sm font-orbitron px-2 sm:px-3 flex items-center gap-2 transition-colors">
-                <div className="size-2 rounded-full bg-[#6D94F3]"></div>
-                <p>Javascript</p>
-              </span>
-              <span className="text-xs sm:text-sm font-orbitron px-2 sm:px-3 flex items-center gap-2 transition-colors">
-                <div className="size-2 rounded-full bg-[#6D94F3]"></div>
-                <p>React</p>
-              </span>
-              <span className="text-xs sm:text-sm font-orbitron px-2 sm:px-3 flex items-center gap-2 transition-colors">
-                <div className="size-2 rounded-full bg-[#6D94F3]"></div>
-                <p>Next.js</p>
-              </span>
-              <span className="text-xs sm:text-sm font-orbitron px-2 sm:px-3 flex items-center gap-2 transition-colors">
-                <div className="size-2 rounded-full bg-[#6D94F3]"></div>
-                <p>Typescript</p>
-              </span>
-              <span className="text-xs sm:text-sm font-orbitron px-2 sm:px-3 flex items-center gap-2 transition-colors">
-                <div className="size-2 rounded-full bg-[#6D94F3]"></div>
-                <p>Figma</p>
-              </span>
-              <span className="text-xs sm:text-sm font-orbitron px-2 sm:px-3 flex items-center gap-2 transition-colors">
-                <div className="size-2 rounded-full bg-[#6D94F3]"></div>
-                <p>UI/UX</p>
-              </span>
-            </div>
-          </div>
-        </div>
+      <div className="px-6 w-full">
+        <h2 className="text-lg flex items-center gap-2 font-bold">
+          Arquivos projetos desenvolvimento web
+          <Star fill="#6D94F3" className="size-4 text-[#6D94F3]" />
+        </h2>
+        <p className="w-full text-[#756E78]  italic mt-4">
+          "Uma seleção dos meus projetos web, criados para entregar experiências
+          rápidas, intuitivas e visualmente atraentes. Aqui você encontra desde
+          interfaces dinâmicas até aplicações completas construídas do zero."
+        </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 px-3 sm:px-6 py-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 ">
         <ProjectLink
           url="https://air-notes-six.vercel.app/"
           image="/airnote.png"
           title="AirNote"
-          description="Air Note é uma aplicação web prática que permite criar, organizar suas notas, ajudando você a lembrar de tarefas"
+          description="Air Note é uma aplicação web prática que permite criar, organizar suas notas"
         />
         <ProjectLink
           url="https://csv-to-json-seven.vercel.app/"
