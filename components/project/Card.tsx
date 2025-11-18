@@ -121,7 +121,7 @@ export default function Card() {
           </div>
         </div>
       </div>
-      <div className="px-6 w-full">
+      <div className="p-6 w-full">
         <h2 className="text-lg flex items-center gap-2 font-bold">
           Arquivos projetos desenvolvimento web
           <Star fill="#6D94F3" className="size-4 text-[#6D94F3]" />
@@ -133,7 +133,7 @@ export default function Card() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 ">
+      <div className="grid px-6 py-4 grid-cols-1 gap-5 sm:grid-cols-2 ">
         <ProjectLink
           url="https://air-notes-six.vercel.app/"
           image="/airnote.png"
