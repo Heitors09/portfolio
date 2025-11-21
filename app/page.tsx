@@ -32,22 +32,6 @@ const projectsData = [
     image: '/airnote.png',
     projectType: 'Web Dev',
   },
-  {
-    title: 'AirNotes',
-    description:
-      'Air Note é uma aplicação web prática que permite criar, salvar e organizar suas notas.',
-    url: 'https://air-notes-six.vercel.app/',
-    image: '/airnote.png',
-    projectType: 'Design',
-  },
-  {
-    title: 'AirNotes',
-    description:
-      'Air Note é uma aplicação web prática que permite criar, salvar e organizar suas notas.',
-    url: 'https://air-notes-six.vercel.app/',
-    image: '/airnote.png',
-    projectType: 'Design',
-  },
 ] as ProjectsDataType[];
 
 const availableProjectTypes = [
@@ -79,13 +63,13 @@ export default function Home() {
 
     switch (name) {
       case 'Design':
-        return 'bg-blue-500 text-white';
+        return 'bg-zinc-700 text-white';
       case 'Web Dev':
-        return 'bg-pink-500 text-white';
+        return 'bg-zinc-700 text-white';
       case 'Todos':
-        return 'bg-purple-500 text-white';
+        return 'bg-zinc-700 text-white';
       default:
-        return 'bg-gray-500 text-white';
+        return 'bg-zinc-700 text-white';
     }
   };
 
@@ -101,8 +85,9 @@ export default function Home() {
             <button
               onClick={() => setValueToFilter(availableProjects.name)}
               key={availableProjects.name}
+              disabled={availableProjects.name === 'Design'}
               type="button"
-              className={`font-bold rounded-md flex py-1 px-2 items-center gap-2 transition-all ${getButtonStyle(
+              className={`font-bold disabled:opacity-50 rounded-md flex py-1 px-2 items-center gap-2 transition-all ${getButtonStyle(
                 availableProjects.name,
                 valueToFilter === availableProjects.name
               )}`}

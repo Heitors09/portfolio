@@ -14,13 +14,6 @@ interface ProjectLinkProps {
   projectType: ProjectType;
 }
 
-const PROJECT_STYLES: Record<ProjectType, string> = {
-  'Web Dev': 'text-white bg-pink-500 text-xs py-1 px-3 rounded-md font-bold',
-  Design: 'text-white bg-blue-500 text-xs py-1 px-3 rounded-md font-bold',
-  Mobile: 'text-white bg-purple-500 text-xs py-1 px-3 rounded-md font-bold',
-  Backend: 'text-white bg-green-500 text-xs py-1 px-3 rounded-md font-bold',
-};
-
 export default function ProjectLink({
   url,
   title,
@@ -41,7 +34,13 @@ export default function ProjectLink({
             <h2 className="mr-5 text-zinc-600 gap-2 font-semibold text-sm  flex items-center justify-center rounded-md  ">
               <FolderGit2 className="size-4" /> <p>{title}</p>
             </h2>
-            <div className={PROJECT_STYLES[projectType]}>{projectType}</div>
+            <div
+              className={
+                'text-white bg-zinc-700 text-xs py-1 px-3 rounded-md font-bold'
+              }
+            >
+              {projectType}
+            </div>
           </div>
           <section className="flex my-4 flex-col border-l-2 px-5 border-[#756E78] gap-2">
             <span className="text-xs  text-pink-500">{url}</span>
