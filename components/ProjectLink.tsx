@@ -44,7 +44,7 @@ export default function ProjectLink({
           </div>
           <section className="flex my-4 flex-col border-l-2 px-5 border-[#756E78] gap-2">
             <span className="text-xs  text-pink-500">{url}</span>
-            <p className="text-sm text-[#756E78]">{description}</p>
+            <p className="text-xs text-[#756E78]">{description}</p>
           </section>
           {image && (
             <div className="relative overflow-hidden rounded-md mb-3">

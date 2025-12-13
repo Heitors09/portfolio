@@ -12,7 +12,7 @@ import Image from 'next/image';
 
 export default function CardHeader() {
   return (
-    <div className="w-full max-w-[800px] ring-1 ring-[#E3DAE3] h-screen max-sm:overflow-y-auto sm:h-auto mx-auto overflow-hidden rounded-[8px] relative z-10 bg-white/50 backdrop-blur-md p-1 sm:pt-6 shadow-2xl">
+    <div className="w-full max-w-[800px] ring-1 ring-[#E3DAE3]  max-sm:overflow-y-auto sm:h-auto mx-auto overflow-hidden rounded-[8px] relative z-10 bg-white/50 backdrop-blur-md p-1 sm:pt-6 shadow-2xl">
       <div className="w-full h-12 bg-zinc-100 absolute border-b border-[#E3DAE3] top-0 left-0 flex items-center justify-end px-4">
         <div className="flex  gap-2">
           <div className="p-1 rounded-md shadow-md bg-white">
@@ -24,19 +24,25 @@ export default function CardHeader() {
         </div>
       </div>
 
-      <div className="flex flex-col sm:flex-row w-full mt-4 p-3 sm:p-6 items-start gap-4">
-        <div className="mt-7 relative sm:mt-0 w-[80px] h-[80px] sm:size-[160px] rounded-md ring-2 ring-zinc-300 shadow-md overflow-hidden flex-shrink-0">
-          <Image src="/bambietta.jpeg" alt="eu" fill />
+      <div className="flex flex-col justify- max-md:py-12 sm:flex-row w-full mt-4 p-3 sm:p-6 items-center md:items-start gap-4">
+        <div className="mt-7 relative sm:mt-0 size-40 rounded-md ring-2 ring-zinc-300 shadow-md overflow-hidden flex-shrink-0">
+          <Image
+            src="/me.jpeg"
+            alt="eu"
+            fill
+            className="object-cover"
+            priority
+          />
         </div>
 
         <div className="flex flex-col gap-1 text-center sm:text-left">
-          <h3 className="font-semibold text-zinc-800 font-orbitron text-lg sm:text-xl">
+          <h3 className="font-bold text-zinc-800 font-orbitron text-2xl sm:text-xl">
             Olá! Me chamo Heitor
           </h3>
           <span className="text-sm text-pink-500">
             Front-End Developer | UI/UX
           </span>
-          <p className="text-sm text-zinc-500 sm:text-sm max-w-[600px] leading-relaxed font-orbitron">
+          <p className="text-sm text-zinc-500 sm:text-xs max-w-[600px] leading-relaxed font-orbitron">
             Fala, galera! Sou desenvolvedor front-end apaixonado por criar
             interfaces atraentes, responsivas e focadas na melhor experiência do
             usuário.{' '}

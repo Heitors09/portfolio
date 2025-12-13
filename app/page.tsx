@@ -16,16 +16,16 @@ type ProjectsDataType = {
 
 const projectsData = [
   {
-    title: 'CSV to JSON',
+    title: 'CSV TO JSON',
     description:
       'Converta arquivos CSV em JSON de forma rápida, segura e gratuita!',
-    url: 'https://air-notes-six.vercel.app/',
+    url: 'https://csv-to-json-seven.vercel.app/',
     image: '/csv-to-json.png',
     projectType: 'Web Dev',
   },
 
   {
-    title: 'AirNotes',
+    title: 'AIRNOTES',
     description:
       'Air Note é uma aplicação web prática que permite criar, salvar e organizar suas notas.',
     url: 'https://air-notes-six.vercel.app/',
@@ -74,13 +74,14 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-[#F0EAF0] w-full   sm:pt-24 h-screen">
+    <div className="bg-[#F0EAF0] w-full  font-mono sm:pt-24 md:h-screen">
       <CardHeader />
       <div className="max-w-[800px] max-h-[600px] bg-white rounded-md shadow-md my-12  p-6 flex flex-col gap-6 mx-auto">
-        <h2 className="flex items-center text-xl font-bold gap-2 ">
-          <Archive className="size-5" /> Projetos
+        <h2 className="flex items-center max-md:justify-center text-xl font-bold gap-2 ">
+          <Archive className="size-5" />{' '}
+          <span className="tracking-widest">PROJETOS</span>
         </h2>
-        <div className="flex items-center text-sm gap-3 w-full">
+        <div className="flex  max-md:justify-center items-center text-sm gap-3 w-full">
           {availableProjectTypes.map((availableProjects) => (
             <button
               onClick={() => setValueToFilter(availableProjects.name)}
@@ -97,7 +98,7 @@ export default function Home() {
             </button>
           ))}
         </div>
-        <div className="w-full grid grid-cols-2 max-h-[600px] overflow-y-scroll gap-3 ">
+        <div className="w-full grid max-md:justify-center md:grid-cols-2 max-h-[600px] overflow-y-scroll max-md:px-2 md:gap-3 ">
           {projectDataFilteredValue.map((project, index) => (
             <ProjectLink
               key={`${project.title}-${index}`}
