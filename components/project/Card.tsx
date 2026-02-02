@@ -7,7 +7,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
-import { Heart, XIcon } from 'lucide-react';
+import { AlertCircle, Heart, Phone, XIcon } from 'lucide-react';
 import Image from 'next/image';
 
 export default function CardHeader() {
@@ -106,6 +106,18 @@ export default function CardHeader() {
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger>
+                  <div className="hover:opacity-80 transition-colors">
+                    <Phone />
+                  </div>
+                </TooltipTrigger>
+                <TooltipContent className="bg-zinc-900 px-4 py-3 rounded-lg border border-zinc-800 shadow-xl">
+                  <p className="font-medium">+55 85 986598249</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
 
             <TooltipProvider>
               <Tooltip>
@@ -129,6 +141,11 @@ export default function CardHeader() {
               </Tooltip>
             </TooltipProvider>
           </div>
+
+          <p className="text-xs mt-4 flex font-semibold items-center gap-2 text-zinc-900 bg-zinc-200 rounded-md p-3">
+            <AlertCircle className="size-4" /> passe o mouse por cima dos icones
+            para ver as informações de contato.
+          </p>
         </div>
       </div>
     </div>
