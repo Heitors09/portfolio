@@ -143,8 +143,8 @@ export default function CardHeader() {
           </div>
 
           <p className="text-xs mt-4 flex font-semibold items-center gap-2 text-zinc-900 bg-zinc-200 rounded-md p-3">
-            <AlertCircle className="size-4" /> passe o mouse por cima dos icones
-            para ver as informações de contato.
+            <AlertCircle className="size-4 hidden sm:block" /> passe o mouse por
+            cima dos icones para ver as informações de contato.
           </p>
         </div>
       </div>
