@@ -2,7 +2,7 @@
 
 import ProjectLink from '@/components/ProjectLink';
 import CardHeader from '@/components/project/Card';
-import { Archive, Code2, FolderGit2, Palette } from 'lucide-react';
+import { Archive, Code2, FolderGit2 } from 'lucide-react';
 import { useState } from 'react';
 
 type ProjectType = 'Web Dev' | 'Design' | 'Mobile' | 'Backend';
@@ -37,7 +37,6 @@ const projectsData = [
 const availableProjectTypes = [
   { name: 'Todos', icon: <FolderGit2 className="size-4" /> },
   { name: 'Web Dev', icon: <Code2 className="size-4" /> },
-  { name: 'Design', icon: <Palette className="size-4" /> },
 ];
 
 export default function Home() {
@@ -62,8 +61,6 @@ export default function Home() {
     }
 
     switch (name) {
-      case 'Design':
-        return 'bg-zinc-700 text-white';
       case 'Web Dev':
         return 'bg-zinc-700 text-white';
       case 'Todos':
@@ -86,9 +83,8 @@ export default function Home() {
             <button
               onClick={() => setValueToFilter(availableProjects.name)}
               key={availableProjects.name}
-              disabled={availableProjects.name === 'Design'}
               type="button"
-              className={`font-bold disabled:opacity-50 rounded-md flex py-1 px-2 items-center gap-2 transition-all ${getButtonStyle(
+              className={`font-bold hover:cursor-pointer disabled:opacity-50 rounded-md flex py-1 px-2 items-center gap-2 transition-all ${getButtonStyle(
                 availableProjects.name,
                 valueToFilter === availableProjects.name
               )}`}

@@ -1,33 +1,16 @@
 // biome-ignore assist/source/organizeImports: <explanation>
 /** biome-ignore-all lint/a11y/noSvgWithoutTitle: <explanation> */
 
-import { AlertCircle, Heart, Phone, XIcon } from 'lucide-react';
+import { Heart, Mail, XIcon } from 'lucide-react';
 import Image from 'next/image';
 import { useState } from 'react';
 
 const contactInfo = [
   {
     id: 'email',
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="20"
-        height="20"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        className="sm:w-6 sm:h-6 text-zinc-700"
-      >
-        <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z" />
-      </svg>
-    ),
+    icon: <Mail  />,
     label: 'heitorao32@gmail.com',
     copyText: 'heitorao32@gmail.com',
-  },
-  {
-    id: 'phone',
-    icon: <Phone className="size-5" />,
-    label: '+55 85 986598249',
-    copyText: '+55 85 986598249',
   },
   {
     id: 'discord',
@@ -102,7 +85,7 @@ export default function CardHeader() {
                 <button
                   type="button"
                   onClick={() => handleClick(item.id)}
-                  className="hover:opacity-80 transition-colors"
+                  className="hover:cursor-pointer hover:opacity-80  transition-colors"
                 >
                   {item.icon}
                 </button>
@@ -162,11 +145,6 @@ export default function CardHeader() {
               </div>
             ))}
           </div>
-
-          <p className="text-xs mt-2 shadow-md  font-semibold items-center gap-2 text-zinc-900 bg-zinc-200 rounded-md flex p-3">
-            <AlertCircle className="size-4 hidden sm:block" /> clique nos icones
-            para ver as informações de contato.
-          </p>
         </div>
       </div>
     </div>

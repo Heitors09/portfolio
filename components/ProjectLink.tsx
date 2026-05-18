@@ -28,7 +28,7 @@ export default function ProjectLink({
           href={url}
           target="_blank"
           rel="noopener noreferrer"
-          className="block gap-3  rounded-lg text-[#252226]  "
+          className="block gap-3 hover:opacity-90  rounded-lg text-[#252226]  "
         >
           <div className="flex shadow-md bg-gradient-to-br from-zinc-100 to-zinc-200 ring-1 ring-zinc-300 p-2 rounded-md justify-between">
             <h2 className="mr-5 text-zinc-600 gap-2 font-semibold text-sm  flex items-center justify-center rounded-md  ">
